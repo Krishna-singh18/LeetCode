@@ -6,9 +6,10 @@ public:
         for(int i:nums){
             cursum+=i;
             maxsum=max(maxsum,cursum);
-            if(cursum<0)cursum=0;
 
+            if(cursum<0)cursum=0;
         }
+
         return maxsum;
 
     }
