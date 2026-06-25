@@ -2,10 +2,10 @@ class Solution {
 public:
     bool isPalindrome(string s) {
         string k;
-        for(char i:s){
-           if(isalnum(i)){
-            k+=tolower(i);
-           }
+        for(char c:s){
+            if(isalnum(c)){
+                k+=tolower(c);
+            }
         }
 
         int l=0;
@@ -15,7 +15,6 @@ public:
             if(k[l]!=k[r])return false;
             l++;
             r--;
-
         }
         return true;
     }
