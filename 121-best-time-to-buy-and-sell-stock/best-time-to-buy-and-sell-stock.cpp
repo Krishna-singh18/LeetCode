@@ -8,7 +8,6 @@ public:
             mini=min(mini,i);
             maxi=max(maxi,i-mini);
         }
-         return maxi;;
+        return maxi;
     }
-   
 };
